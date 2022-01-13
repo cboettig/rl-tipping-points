@@ -26,6 +26,7 @@ model = sb3.TD3(
     gradient_steps=1000,
     action_noise=action_noise,
     policy_kwargs={"net_arch": [64, 64]},
+    tensorboard_log="/var/log/tensorboard"
 )
 
 model.learn(total_timesteps=3000000)
