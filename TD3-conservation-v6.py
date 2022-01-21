@@ -16,7 +16,7 @@ action_noise = OU(mean=np.zeros(1), sigma=noise_std * np.ones(1))
 model = sb3.TD3(
     "MlpPolicy",
     env,
-    verbose=0,
+    verbose=1,
     seed=42,
     gamma=0.995,
     learning_rate=8.315382409902049e-05,
